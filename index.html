@@ -1,40 +1,8 @@
 <!doctype html>
-<html lang="ar" dir="rtl">
-<head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#050505"><meta name="description" content="استوديو بوستات صيدليات د/ مراد صادق">
-<link rel="manifest" href="manifest.webmanifest"><link rel="stylesheet" href="style.css">
-<title>استوديو بوستات الصيدلية</title>
-</head>
-<body>
-<header><div class="brand"><div class="mark">✚</div><div><b>استوديو بوستات الصيدلية</b><small>صيدليات د/ مراد صادق</small></div></div><button id="installBtn" class="ghost" hidden>تثبيت التطبيق</button></header>
-<main>
-<section class="panel editor">
-<h1>إنشاء بوست جديد</h1>
-<div class="tabs"><button class="tab active" data-kind="product">منتج</button><button class="tab" data-kind="awareness">توعية</button><button class="tab" data-kind="offer">عرض</button></div>
-<label>عنوان البوست<input id="title" value="عنوان البوست هنا"></label>
-<label>النص الرئيسي<textarea id="body" rows="5">اكتب المعلومات المهمة بشكل مختصر وواضح.</textarea></label>
-<div class="two">
-<label>لون الإبراز<input id="accent" type="color" value="#ff5a1f"></label>
-<label>حجم العنوان<input id="titleSize" type="range" min="38" max="82" value="64"></label>
-</div>
-<label>صورة المنتج<input id="productImage" type="file" accept="image/*"></label>
-<label>اللوجو الأصلي للصيدلية<input id="logoImage" type="file" accept="image/*"></label>
-<div class="two">
-<label>حجم صورة المنتج<select id="imageSize"><option value="medium">متوسط</option><option value="large">كبير</option><option value="small">صغير</option></select></label>
-<label>محاذاة النص<select id="textAlign"><option value="right">يمين</option><option value="center">وسط</option></select></label>
-</div>
-<div class="actions"><button id="saveBtn">حفظ</button><button id="exportBtn" class="primary">تنزيل PNG</button></div>
-<button id="resetBtn" class="ghost full">مسح المحتوى الحالي</button>
-<p class="hint">ارفع اللوجو الأصلي أول مرة. يُحفظ على هذا الجهاز ويظهر تلقائياً في البوستات التالية.</p>
-</section>
-<section class="panel preview">
-<div class="previewHead"><h2>معاينة حالة واتساب</h2><span>1080 × 1920</span></div>
-<div class="canvasWrap"><canvas id="poster" width="1080" height="1920"></canvas></div>
-<div class="actions"><button id="showSaved" class="ghost">تصميماتي المحفوظة</button></div>
-<div id="savedList" class="saved"></div>
-</section>
-</main>
-<footer>تصميم محلي · لا يحتاج مفاتيح API أو اشتراك تصميم</footer>
-<script src="app.js"></script>
-</body></html>
+<html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#050505"><meta name="description" content="استوديو بوستات صيدليات د/ مراد صادق"><link rel="manifest" href="manifest.webmanifest"><link rel="stylesheet" href="style.css"><title>استوديو بوستات الصيدلية</title></head>
+<body><header><div class="brand"><div class="mark">✚</div><div><b>استوديو بوستات الصيدلية</b><small>قالب أسود وبرتقالي فاخر</small></div></div><button id="installBtn" class="ghost" hidden>تثبيت التطبيق</button></header>
+<main><section class="panel preview"><div class="previewHead"><h2>معاينة البوست الجديد</h2><span>1080 × 1920</span></div><div class="canvasWrap"><canvas id="poster" width="1080" height="1920"></canvas></div><div class="actions"><button id="exportBtn" class="primary">تنزيل PNG</button><button id="saveBtn">حفظ التصميم</button></div><div class="actions"><button id="showSaved" class="ghost">تصميماتي المحفوظة</button></div><div id="savedList" class="saved"></div></section>
+<section class="panel editor"><h1>تعديل محتوى البوست</h1><div class="tabs"><button class="tab active" data-kind="product">منتج</button><button class="tab" data-kind="awareness">توعية</button><button class="tab" data-kind="offer">عرض</button></div>
+<label>اسم المنتج / العنوان<input id="title" value="LIMITLESS CHROMAX CUT"></label><label>الاسم بالعربي أو الوصف المختصر<input id="subtitle" value="ليمتيليس كروماماكس كت"></label><label>عنوان الفائدة<input id="benefit" value="للتخسيس"></label><label>النص التعريفي<textarea id="body" rows="3">اكتب وصفًا مختصرًا ودقيقًا للمنتج هنا، مع تجنب الوعود العلاجية غير المثبتة.</textarea></label><label>صورة المنتج<input id="productImage" type="file" accept="image/*"></label><label>اللوجو الأصلي للصيدلية<input id="logoImage" type="file" accept="image/*"></label>
+<div class="sectionTitle">المكونات / النقاط الرئيسية</div><label>العنصر الأول<input id="feature1Title" value="المكون الأول"></label><label>شرح العنصر الأول<textarea id="feature1Text" rows="2">اكتب شرحًا مختصرًا للمكون أو النقطة الأولى.</textarea></label><label>العنصر الثاني<input id="feature2Title" value="المكون الثاني"></label><label>شرح العنصر الثاني<textarea id="feature2Text" rows="2">اكتب شرحًا مختصرًا للمكون أو النقطة الثانية.</textarea></label>
+<div class="sectionTitle">الشريط السفلي</div><div class="two"><label>ميزة 1<input id="bottom1" value="معلومات موثوقة"></label><label>ميزة 2<input id="bottom2" value="اسأل الصيدلي"></label></div><label>ميزة 3<input id="bottom3" value="نهتم بصحتكم"></label><label>نص التواصل<input id="contact" value="لمزيد من التفاصيل اسأل فريق الصيدلية"></label><div class="two"><label>لون الإبراز<input id="accent" type="color" value="#ff741c"></label><label>حجم صورة المنتج<select id="imageSize"><option value="large">كبير</option><option value="medium">متوسط</option><option value="small">صغير</option></select></label></div><button id="resetBtn" class="ghost full">استعادة النص الافتراضي</button><p class="hint">ارفع اللوجو الأصلي مرة واحدة. سيُحفظ على جهازك ويظهر تلقائيًا في التصميمات التالية. كل النصوص قابلة للتعديل.</p></section></main><footer>يعمل محليًا على جهازك · لا يحتاج اشتراكًا أو مفاتيح API</footer><script src="app.js"></script></body></html>
